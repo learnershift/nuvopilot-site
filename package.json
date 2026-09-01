@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "verify:live": "node scripts/verify-live.mjs"
+  }
+}
