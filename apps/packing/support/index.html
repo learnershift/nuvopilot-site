@@ -1,7 +1,68 @@
 <!doctype html>
-<html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sock Math Support | NuvoPilot</title><meta name="description" content="Help with Sock Math, local records and JSON backups."><link rel="stylesheet" href="/styles.css"></head>
+<html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sock Math Support | NuvoPilot</title><meta name="description" content="How to plan trips, recalculate counts, set evening reminders, share lists and back up Sock Math, plus how to reach support."><link rel="stylesheet" href="/styles.css"></head>
 <body><a href="#main">Skip to content</a><header class="site-header"><div class="wrap nav"><div class="brand"><a href="/">NuvoPilot</a></div><nav class="nav-links" aria-label="Support navigation"><a href="#backup">Backups and records</a><a href="#contact">Contact</a></nav></div></header>
 <main class="wrap" id="main"><article class="content"><p class="eyebrow">Sock Math: Pack by the Night · Android</p><h1>Sock Math Support</h1>
-<h2 id="backup">Backups and records</h2><p>Export or copy your JSON backup before importing. Confirmed import replaces trips and templates. You can delete individual categories and items after confirmation, and archive or restore trips. Keep exported files in a safe location.</p><p>Saved records are kept on this device without automatic sync. Exported files are separate copies: clearing app storage or uninstalling does not delete them. Manage copies in the document provider or folder where you saved them. Before clearing storage, keep a backup you can reopen.</p>
-<h2 id="contact">Contact support</h2><p>For app usage or privacy questions, email <a href="mailto:support@nuvopilot.com">support@nuvopilot.com</a>. Include the app name, version, device model, Android version, and the steps that caused the issue.</p><p>Do not send passwords, verification codes, payment information, a full backup, or unnecessary personal information. Remove private details from screenshots. Email shares your address and the message you choose to send with its recipients and the email services involved.</p><p>Support cannot remotely clear records stored only on your device. These apps do not require an app account.</p>
+<p>This page describes Sock Math version 1.1.0 on Android. The app has five tabs along the bottom: Trips, Rules, Templates, Past and Settings.</p>
+<p>On this page: <a href="#plan">Plan a trip</a> · <a href="#rules">Rules and Recalculate</a> · <a href="#views">Trip views</a> · <a href="#reminders">Reminders</a> · <a href="#share">Sharing</a> · <a href="#backup">Backups</a> · <a href="#ads">Ads</a> · <a href="#contact">Contact</a></p>
+
+<h2 id="plan">Plan a trip</h2>
+<p>On the Trips tab, tap <strong>+ Plan a trip</strong>. The form asks for a trip name, the departure date and the number of nights away (0 counts as a day trip, 60 is the maximum). Pick the weather you expect (Hot, Mild, Cold or Rainy), tick any planned activities (Business, Beach, Hiking, City sightseeing, Snow sports) and say whether you can do laundry.</p>
+<p>In <strong>Who is going?</strong>, type the travelers' names separated by commas. The field starts with "Me", and each name must be different. Tick the bags you will carry. Under <strong>Fill the list from</strong>, choose your packing rules, an empty list, or one of your templates, then tap <strong>Create trip</strong>. A trip holds up to 12 travelers and 12 bags.</p>
+<p>Open the trip later and tap <strong>Details</strong> to rename it or change its date.</p>
+
+<h2 id="rules">Rules and Recalculate</h2>
+<p>Every count Sock Math suggests comes from a line on the Rules tab. A rule has a starting number, an amount added per night, an optional ceiling for trips with laundry, and whether it counts once per traveler or once for the whole group. A rule without weather or activity tags applies to every trip; a tagged rule applies when the trip's weather or one of its activities matches.</p>
+<p>To change a rule, open the Rules tab and tap <strong>Edit</strong> next to it, or add one with <strong>+ New rule</strong>. Editing a rule does not touch existing trips by itself. Open the trip, tap <strong>Conditions &amp; recalculate</strong> (an older trip carried over from version 1.0 may show <strong>Add trip conditions</strong> instead), adjust anything you like and tap <strong>Recalculate</strong>. The app then reports how many items were added, recalculated and removed.</p>
+<ul>
+<li>Items you added by hand are never changed by Recalculate.</li>
+<li>Changing the quantity, name or owner of a rule item detaches it from its rule, so your version stays as you left it. The next Recalculate then adds a fresh item from that rule to the rule's group; delete whichever of the two you do not need.</li>
+<li>Every trip you create keeps its conditions, even one filled from a template or started empty. Recalculating such a trip, adding a traveler to it, or adding conditions to a version 1.0 trip for the first time adds rule items next to the items already there, so remove any doubles.</li>
+<li>When a rule no longer fits the trip, its unpacked items disappear, while ones already ticked as packed remain on the list.</li>
+</ul>
+<p><strong>Restore default rules</strong> at the bottom of the Rules tab swaps your whole rule set for the original one after you confirm. Quantities already on trips stay as they are until you next tap Recalculate on that trip. Items made by rules you added yourself become ordinary items, which Recalculate leaves alone; deleting a single rule has the same effect on its items.</p>
+
+<h2 id="views">Checklist, By person, By bag and Leave home</h2>
+<p>A trip has four views, chosen with the buttons under its summary.</p>
+<ul>
+<li><strong>Checklist</strong> shows items by group. Use <strong>+ Group</strong> and <strong>+ Item</strong> to add your own.</li>
+<li><strong>By person</strong> groups items under each traveler with a packed count, plus a Shared section for items not assigned to anyone. <strong>+ Traveler</strong> adds someone and, on a trip with conditions, recalculates the whole trip with your current rules, exactly as Recalculate does. Removing a traveler also removes the items assigned to them.</li>
+<li><strong>By bag</strong> starts with a <strong>Not in a bag yet</strong> section. Choose a bag for each item from its menu, add bags with <strong>+ Bag</strong>, and note that removing a bag sends its items back to that section.</li>
+<li><strong>Leave home</strong> is a separate list of things to check before you lock the door, such as the stove or the windows. New trips start with a suggested set; add your own with <strong>+ Check</strong>, and if you ever delete them all, <strong>Add suggested checks</strong> brings the set back. Trips carried over from version 1.0 start with an empty list, so tap <strong>Add suggested checks</strong> there. These checks do not count toward the packing progress.</li>
+</ul>
+<p>Finished with a trip? <strong>Archive trip</strong> moves it to the Past tab, and <strong>Restore trip</strong> brings it back. <strong>Save as template</strong> stores the trip's groups and items on the Templates tab for later trips. Owners, bags, packed marks and leave-home checks are left out, and items with the same name in a group become one line with the largest quantity.</p>
+
+<h2 id="reminders">Evening-before reminders</h2>
+<p>Reminders are optional and off until you turn one on for a trip. Open the trip and tap <strong>Remind me the evening before</strong>. On Android 13 and newer, the system asks at that moment whether Sock Math may post notifications; if you decline, everything else keeps working without the reminder. Changed your mind later? In Android Settings, open Apps, then Sock Math, then Notifications, allow them, and tap <strong>Remind me the evening before</strong> again. Menu names can differ slightly between phones.</p>
+<p>The notification is planned for about 6 PM local time on the day before departure and names the trip with the number of items still unpacked. Android can hold it back for a while to save battery, so treat the time as approximate. If the evening before has already passed, the reminder cannot be turned on.</p>
+<p>The app keeps reminders in step with your saved trips. After the phone restarts, or after Sock Math is updated, it schedules them again on its own. Archived trips do not get a reminder.</p>
+<p>To check on reminders, open Settings and look under <strong>Reminders</strong>: it shows whether notifications are allowed, how many reminders are waiting, the last problem and the last reminder. A trip whose status says it is not scheduled yet usually recovers when you reopen the app; if it does not, tap the reminder off and on again.</p>
+<p>To stop a reminder, tap the trip's <strong>Reminder on</strong> button to switch it off, or archive or delete the trip. Restoring an archived trip brings its reminder back if that evening is still ahead. To silence all Sock Math notifications, turn them off for the app in Android Settings.</p>
+
+<h2 id="share">Sharing a list</h2>
+<p><strong>Share list</strong> on a trip turns it into plain text with the trip name, departure date, nights, packed count, traveler names, every item with its quantity, bag and packed mark, and the leave-home checks, then opens Android's share sheet. Whichever app you pick receives that text and handles it under its own rules, so share only with people who should see the names on the list.</p>
+
+<h2 id="backup">Backups and records</h2>
+<p>Trips, rules and templates live in a private database inside the app on your phone. There is no account and no cloud copy, and nothing syncs to another device. Android's cloud backup is turned off for the app, although a direct phone-to-phone transfer while setting up a new phone may still carry the data across. Clearing Sock Math's storage or uninstalling it erases them, and we have no copy we could restore for you.</p>
+<p>Backups are in Settings under <strong>Backup</strong>:</p>
+<ul>
+<li><strong>Save a backup file</strong> opens Android's file saver for a JSON file and also shows the backup text. To keep the text instead, press and hold it, choose Select all, then Copy.</li>
+<li><strong>Restore from a file</strong> reads a JSON backup of 2 MB or less. <strong>Restore from pasted text</strong> accepts the same text; tap <strong>Check backup</strong> after pasting.</li>
+</ul>
+<p>Before anything changes, a <strong>Replace everything?</strong> prompt lists how many trips, templates and rules the backup holds. Confirming swaps all current trips, templates and rules for the backup's contents; nothing is merged. Save a fresh backup first if you might want today's records back.</p>
+<p>Moving to a new phone:</p>
+<ol>
+<li>On the old phone, tap <strong>Save a backup file</strong> and save it somewhere you can reach from the new phone.</li>
+<li>Install Sock Math on the new phone and make sure the phone can open the backup file, either by copying it over or through cloud storage.</li>
+<li>Open the Settings tab in Sock Math, tap <strong>Restore from a file</strong>, pick the file and confirm.</li>
+</ol>
+<p>A backup file is plain JSON that includes traveler names, so keep it somewhere private. Files you saved stay where you put them even after the app is removed.</p>
+
+<h2 id="ads">Ads and ad choices</h2>
+<p>Sock Math shows a Google AdMob banner only on the Past trips list, and only after you open the Past tab yourself. The other tabs and the trip screens carry no ads, and the banner hides while you type. Trip details, traveler names and items are not added to ad requests.</p>
+<p>Where consent choices apply in your region, open the Settings tab and tap <strong>Ad privacy options</strong> under <strong>Privacy and ads</strong>. <strong>Privacy information</strong> in the same section explains how data is handled.</p>
+
+<h2 id="contact">Contact support</h2>
+<p>Write to <a href="mailto:support@nuvopilot.com">support@nuvopilot.com</a> with "Sock Math" in the subject. Helpful details are the app version (shown in Android Settings under Apps), your phone model and Android version, what you tapped, and the exact message you saw. For reminder questions, also copy the four lines under Settings, Reminders.</p>
+<p>Keep passwords, sign-in codes, card or bank details and whole backup files out of your message. You never need to send us your trips; describe the problem instead, and blur other people's names in screenshots.</p>
+<p>Replies are AI-assisted. The text of your email and anything you choose to include may be processed with Anthropic's Claude to understand the issue and draft an answer. Records on your phone are never sent automatically. The <a href="/apps/packing/privacy/">Sock Math privacy policy</a> explains how support mail is handled and how to ask us to delete it.</p>
 </article></main><footer class="site-footer"><div class="wrap">Operated by LABONDANCE Co., Ltd. (nuvopilot), Republic of Korea. <a href="mailto:support@nuvopilot.com">support@nuvopilot.com</a></div></footer></body></html>
